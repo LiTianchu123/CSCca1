@@ -1,0 +1,231 @@
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\SecureAuthentication.dll.config
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\SecureAuthentication.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\SecureAuthentication.pdb
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\csc.exe
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\csc.exe.config
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\csc.rsp
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\csi.exe
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\csi.exe.config
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\csi.rsp
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.AppContext.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Console.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.Compression.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Net.Http.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.ValueTuple.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\vbc.exe
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\vbc.exe.config
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\vbc.rsp
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\VBCSCompiler.exe
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Antlr3.Runtime.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\EntityFramework.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\EntityFramework.SqlServer.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Newtonsoft.Json.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Owin.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Net.Http.Formatting.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Helpers.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.Owin.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.WebHost.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Mvc.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Optimization.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Razor.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Razor.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\WebGrease.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Newtonsoft.Json.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Net.Http.Formatting.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Helpers.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.WebHost.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Mvc.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Optimization.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Razor.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Razor.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Antlr3.Runtime.pdb
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\EntityFramework.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\EntityFramework.SqlServer.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.Owin.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.csproj.CopyComplete
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.dll
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.pdb
+C:\Users\Zhang Yi\source\repos\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.csprojAssemblyReference.cache
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\SecureAuthentication.dll.config
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\SecureAuthentication.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\SecureAuthentication.pdb
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\csc.exe
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\csc.exe.config
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\csc.rsp
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\csi.exe
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\csi.exe.config
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\csi.rsp
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.AppContext.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Console.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.Compression.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Net.Http.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Net.Sockets.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.ValueTuple.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.XPath.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\vbc.exe
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\vbc.exe.config
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\vbc.rsp
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\VBCSCompiler.exe
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Antlr3.Runtime.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\EntityFramework.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\EntityFramework.SqlServer.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Newtonsoft.Json.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Owin.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Net.Http.Formatting.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Helpers.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.Owin.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.WebHost.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Mvc.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Optimization.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Razor.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Deployment.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Razor.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\WebGrease.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Newtonsoft.Json.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Net.Http.Formatting.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Helpers.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.WebHost.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Mvc.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Optimization.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Razor.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Deployment.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.WebPages.Razor.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Antlr3.Runtime.pdb
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\EntityFramework.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\EntityFramework.SqlServer.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\System.Web.Http.Owin.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.csprojAssemblyReference.cache
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.csproj.CoreCompileInputs.cache
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.csproj.CopyComplete
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.dll
+C:\Users\tianc\OneDrive\桌面\CSCca1\Task3\SecureAuthentication\SecureAuthentication\obj\Debug\SecureAuthentication.pdb

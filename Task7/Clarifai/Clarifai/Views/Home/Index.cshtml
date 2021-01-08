@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Clarifai JavaScript Stater</title>
+    <link rel="stylesheet" href="~/Content/index.css" type="text/css" media="screen" />
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
+    <script>
+        try {
+            var app = new Clarifai.App({
+                apiKey: '*****************************'
+            });
+        }
+        catch (err) {
+            alert("Need a valid API Key!");
+            throw "Invalid API Key";
+        }
+
+        // Checks for valid image type
+        function validFile(imageName) {
+            var lowerImageName = imageName.toLowerCase();
+            return lowerImageName.search(/jpg|png|bmp|tiff/gi) != -1;
+        }
+    </script>
+</head>
+<body>
+    <div id="Model_Title" >Receipt Model</div>
+    <input type="hidden" id="hidden-counter" name="hidden-counter" value="1" />
+    @*<form action="" style="font-size:14px; margin-bottom:20px; float:left; margin-right:30px;">
+        <input type="radio" name="model" value="receipt" checked="checked"> Receipt Tagging<br>
+        <input type="radio" name="model" value="clarifaiOCR"> Receipt OCR<br>
+        <input type="radio" name="model" value="general"> General<br>
+    </form>*@
+    <div style="float:left">
+        <input type="text" id="imgurl" placeholder="Image URL" size="80" />
+        <button onclick="
+            if(imgurl.value == '') {
+            alert('Please enter an image URL!');
+            return;
+            }
+            else if (!validFile(imgurl.value)) {
+            alert('Supported File Types: JPEG, PNG, TIFF, BMP');
+            return;
+            }
+            predict_click($('#imgurl').val(), 'url');" style="width:112px">
+            Predict
+        </button>
+        <br /><br />
+        @*<button onclick="
+            if(filename.value == '') {
+            alert('Please browse for a file!');
+            return;
+            }
+            else if (!validFile(filename.value)) {
+            alert('Supported File Types: JPEG, PNG, TIFF, BMP');
+            return;
+            }
+            predict_click($('#filename').val(), 'file');">
+            Predict a local file!
+        </button>*@
+        @*<input type="file" id="filename" placeholder="Filename" size="80" />*@
+    </div>
+    <div id="predictions">
+        <div class="imageHolder">
+            <div class="imgBox">
+                <img id="img_preview1" src="" width="400" />
+            </div>
+            <br />
+            <span id="add-image-button" style="visibility:hidden"><button onClick="addImageToApp(1)">Add image to application</button></span>
+            <span id="check-price-button" style="visibility:hidden"><button onClick="checkPrice(1)">Proceed To check Price</button></span>
+
+        </div>
+        <div id="concepts" class="conceptBox">
+        </div>
+    </div>
+    <script>
+        /*
+        Purpose: Pass information to other helper functions after a user clicks 'Predict'
+        Args:
+        value - Actual filename or URL
+        source - 'url' or 'file'
+        */
+        function predict_click(value, source) {
+            // first grab current index
+            var index = document.getElementById("hidden-counter").value;
+
+            // Div Stuff
+            if (index > 1) {
+                createNewDisplayDiv(index);
+            }
+
+            if (source === "url") {
+                document.getElementById("img_preview" + index).src = value;
+                doPredict({ url: value });
+
+                // Div Stuff
+                createHiddenDivs("url", value);
+            }
+
+            else if (source === "file") {
+                var preview = document.querySelector("#img_preview" + index);
+                var file = document.querySelector("input[type=file]").files[0];
+                var reader = new FileReader();
+
+                // load local file picture
+                reader.addEventListener("load", function () {
+                    preview.src = reader.result;
+                    var localBase64 = reader.result.split("base64,")[1];
+                    doPredict({ base64: localBase64 });
+
+                    // Div Stuff
+                    createHiddenDivs("base64", localBase64);
+
+                }, false);
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                }
+            }
+        }
+
+        /*
+        Purpose: Does a v2 prediction based on user input
+        Args:
+        value - Either {url : urlValue} or { base64 : base64Value }
+        */
+        function doPredict(value) {
+
+            var modelID = getSelectedModel();
+
+            app.models.predict(modelID, value).then(
+
+                function (response) {
+                    console.log(response);
+                    var conceptNames = "";
+                    var tagArray, regionArray;
+                    var tagCount = 0;
+                    var modelName = response.rawData.outputs[0].model.name;
+                    var modelNameShort = modelName.split("-")[0];
+                    var modelHeader = '<b><span style="font-size:14px">' + capitalize(modelNameShort) + ' Model</span></b>';
+                    console.log(modelName)
+                    console.log(response.rawData.outputs[0])
+                    if (modelName === "receipt model") {
+                        var textOCR = response.rawData.outputs[0].data.text.raw.toString();
+                        console.log(textOCR)
+                        console.log(textOCR.length)
+                        if (textOCR.length <= 3) {
+                            console.log("Fail to read")
+                            conceptNames += '<br/><b><span style="font-size:20px">Please try with a clearer Text</span></b>';
+                        } else {
+                            var input = textOCR;
+                            input = input.toLowerCase();
+                            var fields = input.split('total');
+
+                            console.log(fields)
+                            console.log(fields.length)
+                            console.log(fields[fields.length - 1])
+                            console.log(fields[fields.length - 1].split(' '))
+                            var price = fields[fields.length - 1].split(' ');
+                            var total = 0;
+                            var firstTotal = 0;
+                            var lastTotal = 0;
+                            if (price[0] == "") {
+                                lastTotal = Number(price[1].replace(/[^0-9\.]+/g, ""));
+                                console.log(lastTotal)
+                            } else {
+                                lastTotal = Number(price[0].replace(/[^0-9\.]+/g, ""));
+                                console.log(lastTotal)
+                            }
+                            try {
+                                console.log(fields[1])
+                                console.log(fields[1].split(' '))
+                                var newPrice = fields[1].split(' ');
+                                if (newPrice[0] == "") {
+                                    firstTotal = Number(newPrice[1].replace(/[^0-9\.]+/g, ""));
+                                    console.log(firstTotal)
+                                } else {
+                                    firstTotal = Number(newPrice[0].replace(/[^0-9\.]+/g, ""));
+                                    console.log(firstTotal)
+                                }
+
+                                if (firstTotal > lastTotal) {
+                                    console.log(firstTotal)
+                                    total = firstTotal;
+                                    conceptNames += '<br/><b><span style="font-size:15px">Total: ' + total + '</span></b>';
+                                } else if (lastTotal > firstTotal) {
+                                    console.log(lastTotal)
+                                    total = lastTotal;
+                                    conceptNames += '<br/><b><span style="font-size:15px">Total: ' + total + '</span></b>';
+                                } else if (lastTotal == firstTotal) {
+                                    if (lastTotal == 0) {
+                                        conceptNames += '<br/><b><span style="font-size:15px">Value cant be read</span></b>';
+                                    } else {
+                                        console.log(firstTotal)
+                                        total = firstTotal;
+                                        conceptNames += '<br/><b><span style="font-size:15px">Total: ' + total + '</span></b>';
+                                    }
+                                }
+                            } catch (err) {
+                                conceptNames += '<br/><b><span style="font-size:15px">Value cant be read</span></b>';
+                            }
+                        }
+                    }
+
+                    // Generic tag response models
+                    else if (response.rawData.outputs[0].data.hasOwnProperty("concepts")) {
+                        try {
+                            tagArray = response.rawData.outputs[0].data.concepts;
+                            var checkReceipt = true;
+                            var checkTemplate = true;
+                            for (var other = 0; other < tagArray.length; other++) {
+                                if (tagArray[other].value >= 0.6) {
+                                    conceptNames += '<li>' + tagArray[other].name + ': <i>' + tagArray[other].value + '</i></li>';
+                                }
+                                if (tagArray[other].name == "Receipt") {
+                                    if (tagArray[other].value < 0.6) {
+                                        checkReceipt = false;
+                                    }
+                                }
+                                if (tagArray[other].name == "Template") {
+                                    if (tagArray[other].value < 0.6) {
+                                        checkTemplate = false;
+                                    }
+                                }
+                            }
+
+                            if (!checkReceipt) {
+                                window.alert("Not A Receipt")
+                            } else if (checkTemplate) {
+                                window.alert("Is A Templates")
+                            }
+                            else {
+                                document.getElementById("check-price-button").style.visibility = "visible";
+                            }
+                            tagCount = tagArray.length;
+                        } catch (err) {
+                            conceptNames += '<br/><b><span style="font-size:15px">Re-upload url again. Model might not be up</span></b>';
+                        }
+                    }
+
+                    // Bad region request
+                    else {
+
+                        $('#concepts').html("<br/><br/><b>Text Unreadable</b>");
+
+
+                        return;
+                    }
+
+                    var columnCount = tagCount / 10;
+
+                    // Focus gets one more column
+                    if (modelName == "focus") {
+                        columnCount += 1;
+                    }
+
+                    conceptNames = '<ul style="margin-right:20px; margin-top:20px;">' + conceptNames;
+
+                    conceptNames += '</ul>';
+                    conceptNames = conceptNames;
+
+                    $('#concepts').html(conceptNames);
+
+                    document.getElementById("add-image-button").style.visibility = "visible";
+                },
+                function (err) {
+                    console.log(err);
+                }
+            );
+        }
+
+        /*
+        Purpose: Return a back-end model id based on current user selection
+        Returns:
+        Back-end model id
+        */
+        function getSelectedModel() {
+            //var model = document.querySelector('input[name = "model"]:checked').value;
+
+            //if (model === "general") {
+            //    return Clarifai.GENERAL_MODEL;
+            //}
+
+            //else if (model === "receipt") {
+            //    return "receipt concept";
+            //}
+
+            //else if (model === "receiptOCR") {
+            //    return "receipt-reading";
+            //}
+            return "receipt concept";
+
+        }
+
+
+        function checkPrice(index) {
+            $('#concepts').html('<br/><b><span style="font-size:15px">Loading! Please wait a min ^^;</span></b>');
+            var imgType = document.getElementById("hidden-type" + index).value;
+            var imgValue = document.getElementById("hidden-val" + index).value;
+
+            if (imgType === "url") {
+                var data = 'urls=' + imgValue;
+                console.log("url check price")
+                var xhr = new XMLHttpRequest();
+                try {
+                    xhr.addEventListener("readystatechange", function () {
+                        if (this.readyState === this.DONE) {
+                            console.log(this.responseText);
+                            result = JSON.parse(this.responseText);
+                            console.log(result)
+                            console.log(result.result)
+                            console.log((result.result).length)
+                            console.log(result.result[0])
+                            console.log(result.result[0]['prediction'])
+                            var list = (result.result[0]['prediction']).length;
+                            var totalFound = false;
+                            for (var i = 0; i < list; i++) {
+                                var counter = result.result[0]['prediction'][i];
+                                if (counter.label == "Total_Amount") {
+                                    totalFound = true;
+                                    console.log(counter.ocr_text);
+                                    $('#concepts').html('<br/><b><span style="font-size:15px">Total: ' + counter.ocr_text + '</span></b>');
+                                }
+                            }
+                            if (totalFound == false) {
+                                $('#concepts').html('<br/><b><span style="font-size:15px">Total not found!!!</span></b>');
+                            }
+                        }
+                    });
+                } catch (err) {
+                     $('#concepts').html('<br/><b><span style="font-size:15px">Error processing</span></b>');
+                }
+
+                xhr.open("POST", "https://app.nanonets.com/api/v2/OCR/Model/879c2b4b-0c98-4d45-ab47-9a4ce49fe64a/LabelUrls/");
+                xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xhr.setRequestHeader("authorization", "Basic " + btoa("???:"));
+
+                xhr.send(data);
+            } else if (imgType === "base64") {
+                var data = new FormData();
+                console.log(imgValue)
+                data.append('file', imgValue); // This is file object
+
+
+                var xhr = new XMLHttpRequest();
+
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === this.DONE) {
+                        console.log(this.responseText);
+                        result = JSON.parse(this.responseText);
+                        console.log(result)
+                        console.log(result.result)
+                        console.log((result.result).length)
+                        console.log(result.result[0])
+                        console.log(result.result[0]['prediction'])
+                        var list = (result.result[0]['prediction']).length;
+                        for (var i = 0; i < list; i++) {
+                            var counter = result.result[0]['prediction'][i];
+                            if (counter.label == "Total_Amount") {
+                                console.log(counter.ocr_text);
+                                $('#concepts').html('<br/><b><span style="font-size:15px">Total: ' + counter.ocr_text + '</span></b>');
+                            }
+
+                        }
+                    }
+                });
+
+                xhr.open("POST", "https://app.nanonets.com/api/v2/OCR/Model/879c2b4b-0c98-4d45-ab47-9a4ce49fe64a/LabelFile/?async=true");
+                xhr.setRequestHeader("authorization", "Basic " + btoa("???:"));
+
+                xhr.send(data);
+            }
+        }
+        /*
+        Purpose: Add an image to an application after user clicks button
+        Args:
+        index - # of the image in the session
+        */
+        function addImageToApp(index) {
+            var imgType = document.getElementById("hidden-type" + index).value;
+            var imgValue = document.getElementById("hidden-val" + index).value;
+
+            if (imgType === "url") {
+                app.inputs.create({
+                    url: imgValue
+                }).then(
+                    function (response) {
+                        alert("Image successfully added!");
+                    },
+                    function (err) {
+                        alert("Error Adding Image. Check to see if it is a duplicate.");
+                    }
+                );
+            }
+
+            else if (imgType === "base64") {
+                app.inputs.create({
+                    base64: imgValue
+                }).then(
+                    function (response) {
+                        alert("Image successfully added!");
+                    },
+                    function (err) {
+                        alert("Error Adding Image. Check to see if it is a duplicate.");
+                    }
+                );
+            }
+        }
+
+        /*
+        Purpose: Create a dynamic div to store entire user session
+        Args:
+        index - # of the image in the session
+        */
+        function createNewDisplayDiv(index) {
+            var mainDiv = document.getElementById("predictions");
+
+            var elem = document.createElement('div');
+            elem.innerHTML =
+                '<div class="imageHolder" > \
+             <div class="imgBox"> \
+                 <img id="img_preview' + index + '" src="" width="400"/> \
+             </div> \
+             <br/> \
+             <span id="add-image-button" style="visibility:hidden"> \
+             <button onClick="addImageToApp(' + index + ')">Add image to application</button> \
+             </span> \
+             <span id="check-price-button" style="visibility:hidden"> \
+             <button onClick="checkPrice(' + index + ')">Proceed To check Price</button> \
+             </span> \
+             </div> \
+             <div id="concepts" class="conceptBox"> \
+             </div>';
+
+            mainDiv.innerHTML = elem.innerHTML + mainDiv.innerHTML;
+        }
+
+        /*
+        Purpose: Creates hidden Div elements to store info of each picture uploaded
+        Args:
+        urlOrBase64 - binary variable to store the type of image
+        source - the actual URL string or the base64
+        */
+        function createHiddenDivs(urlOrBase64, source) {
+            // first grab current index
+            var index = document.getElementById("hidden-counter").value;
+
+            // type
+            var input1 = document.createElement("input");
+            input1.setAttribute("type", "hidden");
+            input1.setAttribute("id", "hidden-type" + index);
+            input1.setAttribute("name", "hidden-type" + index);
+            input1.setAttribute("value", urlOrBase64);
+
+            // value
+            var input2 = document.createElement("input");
+            input2.setAttribute("type", "hidden");
+            input2.setAttribute("id", "hidden-val" + index);
+            input2.setAttribute("name", "hidden-val" + index);
+            input2.setAttribute("value", source);
+
+            // add new inputs to page
+            document.getElementsByTagName('body')[0].appendChild(input1);
+            document.getElementsByTagName('body')[0].appendChild(input2);
+
+            // increment index
+            document.getElementById("hidden-counter").value = parseInt(index) + 1;
+        }
+
+        /*
+        Purpose: Return a capitalized String
+        Args:
+        s - A String
+        */
+        function capitalize(s) {
+            return s[0].toUpperCase() + s.slice(1);
+        }
+
+    </script>
+</body>
+</html>

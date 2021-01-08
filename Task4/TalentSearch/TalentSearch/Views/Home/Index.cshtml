@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Live Search</title>
+    <script src="~/Scripts/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="~/Styles/mystyle.css" />
+</head>
+<body>
+    <div id="searcharea">
+        <label for="search">live search</label>
+        <p>Enter the name or info about a speaker</p>
+        <input type="search" name="search" id="search" placeholder="name or info" />
+        <button id="searchBtn">Search</button>
+    </div>
+    <div id="update"></div>
+  
+    @section scripts{
+
+        <script>
+            $('#searchBtn').on('click', function () {
+
+                //var urlForJson = "/Json/data.json";
+
+
+                //get data from Restful web Service in development environment
+                //var urlForJson = "http://localhost:9000/api/talents";
+
+                //get data from Restful web Service in production environment
+                //var urlForJson= "http://csc123.azurewebsites.net/api/talents";
+
+            
+                var imageUrl = "https://res.cloudinary.com/singapore-polytechnic1/image/upload/v1609823106/talent/";
+
+                var searchField = $('#search').val();
+                var myExp = new RegExp(searchField, "i");
+                $.ajax({
+                    method: 'GET',
+                    url: 'https://talentapi1.azurewebsites.net/api/talents'
+                }).done(function (data) {
+                    var output = '<ul class="searchresults">';
+                    $.each(data, function (key, val) {
+               
+                        console.log(data);
+                        if ((val.Name.search(myExp) != -1) ||
+                            (val.Bio.search(myExp) != -1)) {
+                            output += '<li>';
+                            output += '<h2>' + val.Name + '</h2>';
+                            output += '<img src=' + imageUrl + val.ShortName + "_tn.jpg alt=" + val.Name + '" />';
+                            output += '<p>' + val.Bio + '</p>';
+                            output += '</li>';
+                        }
+                    });
+                    output += '</ul>';
+                    $('#update').html(output);
+
+                }).fail(function (data) {
+                    console.dir(data);
+
+                });
+           
+            });
+        
+            </script>
+        
+        } 
+</body>
+</html>

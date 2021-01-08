@@ -1,0 +1,93 @@
+﻿
+@{
+    ViewBag.Title = "UploadImage";
+}
+
+<div>
+    <p>Choose a image file to upload</p>
+    <input type="file" id="fileinput" accept=".png, .jpg, .jpeg">
+    <img id="selectedImg" />
+    <button id="upload">upload</button>
+</div>
+@section scripts{
+    <style>
+        #upload {
+            display: block;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+
+            $("#fileinput").on("change", function () {
+                var file = $('#fileinput').prop('files');
+                if (file && file[0]) {
+                    var reader = new FileReader();
+                    reader.readAsDataURL(file[0]);
+                    reader.onload = function (e) {
+                        $("#selectedImg").attr("src", e.target.result);
+                    }
+                }
+            });
+
+            $('#upload').on('click', function () {
+                var file = $('#fileinput').prop('files');
+                var reader = new FileReader();
+                reader.readAsDataURL(file[0]);
+                reader.onload = function () {
+                    var dataURL = reader.result;
+                    var base64 = dataURL.replace(/^data:image\/(png|jpg|jpeg);base64,/, "");
+                    console.dir(base64);
+                    $.ajax({
+                        method: 'POST',
+                        url: '/Home/UploadToS3',
+                        dataType: 'text',
+                        async: true,
+                        data: { base64String: base64 },
+                    }).done(function (data) {
+                        shortenUrl(data.toString());
+                    }).fail(function (data) {
+                        alert("An error occured during the uploading");
+                    });
+                };
+
+
+                function shortenUrl(longUrl){
+
+                    var params = {
+                        "long_url": longUrl
+                    };
+                    var accessToken = "***********************"
+                    $.ajax({
+                        url: "https://api-ssl.bitly.com/v4/shorten",
+                        cache: false,
+                        dataType: "json",
+                        method: "POST",
+                        contentType: "application/json",
+                        beforeSend: function (xhr) {
+                            xhr.setRequestHeader("Authorization", "Bearer " + accessToken);
+                        },
+                        data: JSON.stringify(params)
+                    }).done(function (data) {
+                        console.dir(data.link);
+                        copyToClipboard(data.link);
+                        alert("You short URL is: " + data.link.toString() + "\nCopied to clipboard!");
+
+                    }).fail(function (data) {
+                        console.log("An error occured during the shortening of url");
+                    });
+                }
+
+                function copyToClipboard(text) {
+                    var dummy = document.createElement("textarea");
+                    document.body.appendChild(dummy);
+                    dummy.value = text;
+                    dummy.select();
+                    document.execCommand("copy");
+                    document.body.removeChild(dummy);
+                }
+            });
+
+        });
+    </script>
+
+}
